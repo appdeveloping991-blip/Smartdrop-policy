@@ -43,7 +43,10 @@ The Application interacts with third-party components to verify payments and han
 
 5. Data Retention and Deletion
 * On-Device Data Removal: You maintain absolute governance over your structural file entries. Deleting an asset or wiping the Application's core cache profiles permanently removes the file, along with its specific .tag metadata dependencies, from your device’s sandbox framework.
-* Google Session Revocation: Utilizing the built-in "Logout" or "Switch Account" menu modules completely severs existing active OAuth tokens, triggers automated local profile cache resets, and disconnects Google API interaction sessions instantly.
+
+* Google Drive Cloud Backup Deletion: Because Smart Drop handles backups via a decentralized model directly to your personal cloud storage (using the secure drive.file scope), we do not store your files on external servers and cannot delete them for you. Users can permanently delete their cloud backups at any time by opening their personal Google Drive, navigating to the app-generated master folder named "Smart Drop", and deleting its contents.
+
+* Google Session Revocation & Identity Wiping: Utilizing the built-in "Logout" or "Switch Account" menu modules completely severs existing active OAuth tokens, triggers automated local profile cache resets, and disconnects Google API interaction sessions instantly. To completely wipe the OAuth link from the web, users can visit their Google Account Security Settings and revoke access for Smart Drop.
 
 6. Security
 Smart Drop incorporates platform-level privacy guard protections. Whenever a user moves into a workspace marked as "Private", the Application dynamically interfaces with native hardware APIs (setSecure) to block operating system background snapshot tools from capturing running view states or caching layout views when the mobile app transitions to an inactive or minimized lifecycle phase.

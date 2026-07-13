@@ -20,9 +20,13 @@ Effective Date: June 9, 2026
 Welcome to Smart Drop ("we," "our," "us"). We are committed to protecting your privacy as an individual independent developer. This Privacy Policy outlines how Smart Drop handles data when you use our mobile application ("Application", "App"). Smart Drop is designed as a secure local-first file management ecosystem that operates primarily using local on-device storage sandboxing techniques alongside optional user-directed cloud backups.
 
 2. Information We Collect and Process
-Because Smart Drop functions as a private on-device vault, our access to your data is strictly minimized. We handle data in the following manners:
 
-* Authentication & Account Identity: When you choose to authenticate via the "Sign In with Google" pipeline, we access and retain your Google account email address locally inside your device’s SharedPreferences to dynamically establish and name your isolated account data directories. We do not collect or transmit this data to any external third-party proprietary servers.
+Because Smart Drop functions primarily as a private on-device vault, we minimize the amount of personal information we collect.
+
+* Authentication & Account Identity:
+   When you choose to sign in with your Google account, we collect your Google account name and email address to create and manage your Smart Drop account. We also record your country (based on your device locale), the date and time of your first sign-in, and your account status (such as Premium status, if applicable). This information is securely stored using Google Firebase services to provide account management, cloud synchronization, backup, and other account-related features. We do not sell or share your personal information with third parties for advertising purposes.
+
+   Your Google account email may also be stored locally on your device to create and manage your isolated Smart Drop storage directories and personalized app experience.
 
 * User Files, Thumbnails, and Metadata: All files imported into Smart Drop, along with their generated .thumb.png metadata and custom indexing elements, are saved directly onto your physical device storage within your user account-specific sandbox path directory (/users/your_email/). This structural setup ensures absolute partition isolation on shared local storage hardware platforms.
 
